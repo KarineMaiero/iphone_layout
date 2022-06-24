@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h5 {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.cloud-drizzle {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.temperature {
+    font-size: 54px;
+    margin-top: 10px;
+}
+
+.warning {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.umbrella {
+    width: 13px;
+    height: 13px;
+}
+
+:root {
+    --dark-blue: #1D1D1D;
+    --light-grey: #BFBFC1;
+}
+
+.iphone-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./wallpaper1.jpeg');
+    background-color: var(--dark-blue);
+    width: 300px;
+    height: 600px;
+    border-radius: 40px;
+    border: 15px solid black;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.iphone-container .iphone-menu {
+    background-color: var(--light-grey);
+    width: 100px;
+    height: 2px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 50px);
+}
+
+.iphone-container .notch {
+    background-color: black;
+    width: 160px;
+    height: 20px;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+}
+
+.iphone-container .week-weather {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.iphone-container .week-weather .cloud-lightning, .sun, .cloud {
+    width: 12px;
+    height: 12px;
+}
